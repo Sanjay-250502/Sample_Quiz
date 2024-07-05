@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ min-width: 100vw;
+}
+.quiz-app{
+  width: 90vw;
+  background-color: #80d8da;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+.question-section{
+  padding: 10px;
+  text-align: center;
+  position: relative;;
+}
+.question-section h1{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fd079b;
+  margin-bottom: 10px;
+}
+.question-section p{
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #333;
+  margin-bottom: 20px;
+}
+.options{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+.options .opt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 10px;
+}
+.options label{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.options input{
+  cursor: pointer;
+}
+
+.timer{
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.timer span{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: red;
+}
+
+.score-section{
+  text-align: center;
+}
+
+.score-section h2{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.score-section button{
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color:rgb(38, 38, 231);
+  margin-bottom: 10px;
+}
+.score-section button:hover{
+  background-color: rgb(0, 0, 255);
+}
+
+.navigation-buttons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.next-button{
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(38, 38, 231);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.next-button:hover{
+  background-color: rgb(30, 30, 96);
+}
+
+.prev-button{
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgb(32, 120, 32);
+  margin-top: 10px;
+}
+.prev-button:hover{
+  background-color: rgb(56, 198, 56);
+}
+
+
+
+@media (max-width: 455px) {
+  .quiz-app {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .question-section h1 {
+    font-size: 1rem; 
+    margin-left: -177px;
+  }
+
+  .options label {
+    font-size: 0.9rem; 
+  }
+  .timer{
+    font-size: 20px;
+    position: absolute;
+    top: -9px;
+    right: 0;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .quiz-app {
+    width: 100%; 
+    padding: 8px;
+  }
+
+  .question-section h1 {
+    font-size: 1.3rem; 
+   
+  }
+
+  .options label {
+    font-size: 0.8rem; 
+  }
+}
+
+
+ @media (max-width: 320px) {
+  .quiz-app {
+    width: 100%;
+  }
+  .question-section{
+    padding: 30px;
+  }
+  .question-section h1 {
+    font-size: 1.5rem;
+    margin-left: -155px;
+  }
+
+  .question-section p {
+    font-size: 0.9rem;
+  }
+
+  .options .opt {
+    font-size: 0.9rem;
+  }
+
+  .options label {
+    font-size: 0.9rem;
+  }
+
+  .timer {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+
+  .score-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .score-section button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+
+  .navigation-buttons {
+    gap: 5px;
+  }
+
+  .next-button,
+  .prev-button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+} 
